@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(#34ecec, #bbebeb) no-repeat;
-    background-size: 100% 70px;
+    background-size: 100% 300px;
    /* padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;*/
@@ -11,7 +11,9 @@ body{
 }*/
 h1 {
     font-family:Microsoft YaHei, serif;
-    color:rgb(0, 0, 139);
+    /*color:rgb(0, 0, 139);*/
+    color:rgb(255,255,255);
+    font-size: 110px;
 }
 
 h2 {
