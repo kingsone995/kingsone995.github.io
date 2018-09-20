@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(#34ecec, #bbebeb) no-repeat;
+    background-size: 100% 70px;
+   /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;*/
+
+}
+/*h1 {
+    font-family:Georgia, serif;
+}*/
+h1 {
+    font-family:Microsoft YaHei, serif;
+    color:rgb(0, 0, 139);
+}
+
+h2 {
+    font-family:Microsoft YaHei, serif;
+    color:rgb(0, 0, 139);
+}
+h3 {
+    font-family:Microsoft YaHei, serif;
+    color:rgb(0, 0, 139);
+}
+
+
+p {
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+    text-indent: 2em;
+}
+p1 {
+    font-family: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+    color: darkolivegreen;
+   /* color:dodgerblue;*/
+}
+p2{
+    font-family: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+    color: dodgerblue;
+}
+
+img{
+    padding: 3pt;
+    float: right;
+    max-height: 25%;
+    max-width: 25%;
+}
