@@ -30,5 +30,11 @@ plt.show()
 ```
 
 ## 图形
-根据上述代码，最终显示的图形如下所示。
+根据上述代码，最终显示的图形如下所示。$f(x)=sin(\omega x)$，其中，$\omega = \frac{3}{8} \pi $。
+
+<center>
+  <img src="https://raw.githubusercontent.com/kingsone995/python/master/stepone/Figure_1.png" > 
+  图LAB1 
+</center>
+
 
