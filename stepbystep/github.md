@@ -9,3 +9,9 @@
 <center>
    <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/stepbystep/second.png" > 
 </center>
+
+3.第三步，建立个人博客的仓库。
+  点击上图左边绿色按钮，上面着New reposity。
+<center>
+   <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/stepbystep/third.png" > 
+</center>
