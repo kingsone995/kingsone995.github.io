@@ -15,3 +15,8 @@
 <center>
    <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/stepbystep/third.png" > 
 </center>
+
+进入后如下图填写，然后确认。
+<center>
+   <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/stepbystep/fourth.png" > 
+</center>
