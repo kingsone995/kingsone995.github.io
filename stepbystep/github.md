@@ -4,4 +4,5 @@
   <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/stepbystep/first.png" > 
 </center>
    
-1. 第二步，申请个人账号
+2. 第二步，申请个人账号.
+   点击上图中的sign up for github。尤其要注意邮箱，这个将是你在github的主要识别号。
