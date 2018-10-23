@@ -20,7 +20,7 @@ filter.lfs.smudge=git-lfs smudge -- %f
 filter.lfs.process=git-lfs filter-process
 filter.lfs.required=true
 filter.lfs.clean=git-lfs clean -- %f
-user.name=Kingsone
-user.email=kingsone995@gmail.com
+user.name=John Doe
+user.email=johndoe@example.com
 ```
 
