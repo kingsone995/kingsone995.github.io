@@ -149,7 +149,7 @@ python testgui.py
 ```
 如果弹出如下窗口，那就大功告成了。
 <center>
-  <img src="https://raw.githubusercontent.com/kingsone995/python/master/stepone/Figure_1.png" > 
+  <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/python/pythongui.png"> 
   图LAB1 
 </center>
 
