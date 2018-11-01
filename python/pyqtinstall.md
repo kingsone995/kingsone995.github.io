@@ -28,9 +28,9 @@ Error: Use the --qmake argument to explicitly specify a working Qt qmake.
 
 * 具体方法（以MAC下为例）：
 ```
-export PATH=/Users/XXXXXXXXX（自己的mac用户名）/Qt5.8.0/5.8/clang_64/bin:$PATH
+export PATH=/Users/aaa/Qt5.8.0/5.8/clang_64/bin:$PATH
 ```
-
+>注：上面aaa根据各自的用户名不同而不同
 ### 3.编译sip
 用以下命令编译sip（在Windows/Visual Studio平台下，以下命令的make应用nmake代替）
 ```
@@ -150,7 +150,6 @@ python testgui.py
 如果弹出如下窗口，那就大功告成了。
 <center>
   <img src="https://raw.githubusercontent.com/kingsone995/kingsone995.github.io/master/python/pythongui.png"> 
-  图LAB1 
 </center>
 
 
