@@ -25,12 +25,18 @@ Error: Use the --qmake argument to explicitly specify a working Qt qmake.
 
 * 原因：qmake所在目录没有包含到环境变量PATH中，导致找不到qmake。
 
-* 解决思路：用export指令临时把qmake对应路径加入到PATH中。
+* 解决思路：MAC版本用export指令临时把qmake对应路径加入到PATH中。WINDOWS则用set path指令。
 
-* 具体方法（以MAC下为例）：
+* 具体方法（MAC）
 ```
 export PATH=/Users/aaa/Qt5.8.0/5.8/clang_64/bin:$PATH
 ```
+* 具体方法（WIN）
+```
+set path=C:\Users\aaa\QT5.8.0\5.8\clang_64\bin;%path%
+```
+
+
 >注：上面aaa根据各自的用户名不同而不同
 ### 3.编译sip
 用以下命令编译sip（在Windows/Visual Studio平台下，以下命令的make应用nmake代替）
