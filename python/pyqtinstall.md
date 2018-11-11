@@ -2,6 +2,7 @@
 * 安装好PYTHON
 * 安装好VS CODE
 * 安装好QT5.8
+* WINDOWS版本安装好Microsoft Visual Studio（VC2010，2013均可），MAC版本安装好XCODE
 
 ### 2.下载基本源文件
 
