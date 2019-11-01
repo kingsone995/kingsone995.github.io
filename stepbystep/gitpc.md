@@ -72,12 +72,90 @@ ssh -T git@github.com
 ### 3.3 查看状态 git status
 进入kingsone995.github.io目录，运行命令 git status，看到内容为
 ```
-192:kingsone995.github.io wangyigang$ git status
+192:kingsone995.github.io XXX$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
 ```
+### 3.4 修改文件，查看反应
+对stepbustep/gitpc.md的文件进行修改后保存。
+然后再执行git status命令。看到：
+```
+192:kingsone995.github.io XXX$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   stepbystep/gitpc.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+看到这个文件被修改，但是没有加入到仓库中。
+
+### 3.5 加入修改信息git add *
+执行命令： 
+```
+git add *
+```
+
+再执行git status，看到
+ ```
+ 192:kingsone995.github.io XXX$ git add *
+192:kingsone995.github.io XXX$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   stepbystep/gitpc.md
+```
+提示可以提交了。
+
+### 3.6 进行提交git commit
+执行命令 
+```
+git commit
+```
+看到结果为：
+```
+192:kingsone995.github.io XXX$ git commit
+[master 231a1d3] test
+ 1 file changed, 62 insertions(+), 5 deletions(-)
+192:kingsone995.github.io XXX$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+弹出来的提示是后面上传到github网站后每个文件的说明。
+这一步完成后本地git仓库更新完毕。
+
+### 3.7 提交到网站git push
+执行命令
+```
+git push
+```
+看到结果
+```
+192:kingsone995.github.io XXX$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.02 KiB | 2.02 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:kingsone995/kingsone995.github.io.git
+   9dd142e..231a1d3  master -> master
+```
+表明文件已经被上传到网站，这是可以到网站上去查看是否是最新文件。
 
 
 
