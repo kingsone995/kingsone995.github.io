@@ -36,10 +36,17 @@ conda create -n tensorflow python=3.7
 ```
 2. 激活 conda 环境
 ```
-active tensorflow
+activate tensorflow
 （tensorflow）C:>
 ```
-成功后就提示成下面这一行
+成功后就提示成下面这一行。
+
+
+另外，完成处理后，需要执行
+```
+conda deactivate
+```
+退出tensorflow环境
 
 3. 执行安装命令
 ```
