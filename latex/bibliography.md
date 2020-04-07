@@ -1,57 +1,54 @@
 ## 概述
-本文详细说明在Win10下如何安装TensorFlow开发环境
+本文简要说明在MAC下如何使用latex
 
-### 1.安装PYTHON3.7
-如果没有安装PYTHON的同学，先从[https://www.python.org](https://www.python.org)网站下载相关安装包。我这次下载的是3.7.5.
+### 1.基本环境
+MacTex + Sublime + Skim
 
-### 2.安装Anaconda
-此次下载的文件名为：Anaconda3-2019.10-Windows-x86_64.exe，网站要是上不去，可从其他地方搜索下载。
-安装时候，建议安装到C:\programdata目录下，也就是自动提示的那个目录。
-
-安装完成后需要为环境变量PATH增加两个路径。
-一个是C:\ProgramData\Anaconda3\Scripts
-另一个是C:\ProgramData\Anaconda3\Library\bin
-修改环境变量方法：开始菜单-->windows系统-->控制面板-->系统和安全-->系统-->高级系统设置-->环境变量-->PATH-->编辑-->新建，把上面这两个依次加进去即可。
-
-### 3.安装CUDA相关
-
-运行tensorflow一般都要有GPU支持，如果没有GPU支持的同学，直接装CPU版本，有GPU的同学先安装CUDA相关。
-
-* 首先是安装CUDA toolkit，这个可以到英伟达网站下载。本次下载的文件名为：cuda_10.1.243_426.00_win10.exe
-
-* 接着安装cuDNN，本次下载的版本为cudnn-10.1-windows10-x64-v7.6.5.32.zip.
-解压缩之后，把CUDA文件夹放到C:\Tools目录，把C:\Tools\CUDA\bin也加到环境变量PATH中
-
-### 4.升级Anaconda3
-这一步可以做一下，不过时间很漫长。
-
-如果时间过长，可以把channel换到国内，这样会快些。
-
-
-### 5.开始安装tensorflow
-
-1. 在命令行中使用以下命令创建 conda 环境（如果使用 Windows，最好在命令行中以管理员身份执行）：
+### 1.使用参考文献
+1. 通过EndNote收集文献；
+2. 将收集到的文献，通过“文件”-“导出”，输出样式中选择"BibTex Export",生成的其中一个文献如下：
 ```
-conda create -n tensorflow python=3.7
+@article{RN1780,
+   author = {Li, Kai and Wang, Qiang and Wu, Jia and Yu, Haiyang and Zhang, Dongsheng},
+   title = {Calibration error for dual-camera digital image correlation at microscale},
+   journal = {Optics and Lasers in Engineering},
+   volume = {50},
+   number = {7},
+   pages = {971-975},
+   ISSN = {0143-8166},
+   DOI = {10.1016/j.optlaseng.2012.01.025},
+   url = {http://www.sciencedirect.com/science/article/pii/S0143816612000395},
+   year = {2012},
+   type = {Journal Article}
+}
 ```
-2. 激活 conda 环境
+3. 将刚刚生成的文本文件直接改名为MyBib.bib，并拷贝到tex文件所在目录。
+4. 在tex文件的\end{document}之前，加上两句,加完后的结果如下：
 ```
-activate tensorflow
-（tensorflow）C:>
+\bibliographystyle{plain}
+\bibliography{MyBib}
+\end{document}
 ```
-成功后就提示成下面这一行。
+其中MyBib就是我们刚刚生成的参考文献目录。
+plain就是参考文献的输出格式（毕业论文格式检查中，很多就是参考文献格式问题）。
+5. 参考文献引用如下,其中RN1780就是文献ID，输入cite和{}后，一般会自动跳出来。
+```
+\cite{RN1780}
+```
+6. 编译两次，就能生成对应的参考文献格式。
 
-
-另外，完成处理后，需要执行
+引用地方原文：
 ```
-conda deactivate
+从上一章我们知道，N个点的DTF需要做很多次运算。我们先来看一看，一个正向DFT需要做几次计算\cite{RN1780,RN1087,RN1778,RN1779}。\\
 ```
-退出tensorflow环境
-
-3. 执行安装命令
+引用地方效果：
 ```
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu
+从上一章我们知道，N 个点的 DTF 需要做很多次运算。我们先来看一看，一个正向 DFT 需要做几次计算 [1–4]。
 ```
-接下来又是漫长等待，
-
-4. 
+参考文献输出格式：
+```
+[1] Ikhyun Lee, Muhammad Tariq Mahmood, and Tae-Sun Choi. Adaptive window selection for 3d shape recovery from image focus. Optics and Laser Technology, 45(1):21–31, 2013.
+[2] Kai Li, Qiang Wang, Jia Wu, Haiyang Yu, and Dongsheng Zhang. Calibration error for dual-camera digital image correlation at microscale. Optics and Lasers in Engineering, 50(7):971–975, 2012.
+[3] K. B. Lim, W. L. Kee, and D. L. Wang. Virtual camera calibration and stereo correspondence of single-lens bi-prism stereovision system using geometrical approach. Signal Processing-Image Communication, 28(9):1059–1071, 2013.
+[4] Said Pertuz, Domenec Puig, and Miguel Angel Garcia. Analysis of focus measure operators for shape-from-focus. Pattern Recognition, 46(5):1415–1432, 2013.
+```
