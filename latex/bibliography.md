@@ -29,7 +29,7 @@ MacTex + Sublime + Skim
 \bibliography{MyBib}
 \end{document}
 ```
-其中MyBib就是我们刚刚生成的参考文献目录。
+其中MyBib就是我们刚刚生成的参考文献清单。
 plain就是参考文献的输出格式（毕业论文格式检查中，很多就是参考文献格式问题）。
 5. 参考文献引用如下,其中RN1780就是文献ID，输入cite和{}后，一般会自动跳出来。
 ```
