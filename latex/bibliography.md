@@ -52,3 +52,4 @@ plain就是参考文献的输出格式（毕业论文格式检查中，很多就
 [3] K. B. Lim, W. L. Kee, and D. L. Wang. Virtual camera calibration and stereo correspondence of single-lens bi-prism stereovision system using geometrical approach. Signal Processing-Image Communication, 28(9):1059–1071, 2013.
 [4] Said Pertuz, Domenec Puig, and Miguel Angel Garcia. Analysis of focus measure operators for shape-from-focus. Pattern Recognition, 46(5):1415–1432, 2013.
 ```
+7. 输出格式的编辑，可以自己生成.bst文档,用以替换前面的plain也是可以，具体方法以后再写。
