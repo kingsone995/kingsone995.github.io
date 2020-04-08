@@ -4,9 +4,9 @@
 ### 1.基本环境
 MacTex + Sublime + Skim
 
-### 1.使用参考文献
-1. 通过EndNote收集文献；
-2. 将收集到的文献，通过“文件”-“导出”，输出样式中选择"BibTex Export",生成的其中一个文献如下：
+### 2.使用参考文献
+step 1. 通过EndNote收集文献；
+step 2. 将收集到的文献，通过“文件”-“导出”，输出样式中选择"BibTex Export",生成的其中一个文献如下：
 ```
 @article{RN1780,
    author = {Li, Kai and Wang, Qiang and Wu, Jia and Yu, Haiyang and Zhang, Dongsheng},
@@ -22,8 +22,8 @@ MacTex + Sublime + Skim
    type = {Journal Article}
 }
 ```
-3. 将刚刚生成的文本文件直接改名为MyBib.bib，并拷贝到tex文件所在目录。
-4. 在tex文件的\end{document}之前，加上两句,加完后的结果如下：
+step 3. 将刚刚生成的文本文件直接改名为MyBib.bib，并拷贝到tex文件所在目录。
+step 4. 在tex文件的\end{document}之前，加上两句,加完后的结果如下：
 ```
 \bibliographystyle{plain}
 \bibliography{MyBib}
@@ -31,11 +31,12 @@ MacTex + Sublime + Skim
 ```
 其中MyBib就是我们刚刚生成的参考文献清单。
 plain就是参考文献的输出格式（毕业论文格式检查中，很多就是参考文献格式问题）。
-5. 参考文献引用如下,其中RN1780就是文献ID，输入cite和{}后，一般会自动跳出来。
+
+step 5. 参考文献引用如下,其中RN1780就是文献ID，输入cite和{}后，一般会自动跳出来。
 ```
 \cite{RN1780}
 ```
-6. 编译两次，就能生成对应的参考文献格式。
+step 6. 编译两次，就能生成对应的参考文献格式。
 
 引用地方原文：
 ```
