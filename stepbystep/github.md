@@ -1,7 +1,7 @@
 # github基础
 1. 第一步，打开github主页，www.github.com
     <center>
-  <img src="https://github.com/kingsone995/kingsone995.github.io/blob/master/stepbystep/first.png" > 
+  <img src="https://github.com/kingsone995/kingsone995.github.io/blob/master/stepbystep/first1.png" > 
 </center>
    
 2. 第二步，申请个人账号.
